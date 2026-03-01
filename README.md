@@ -1,5 +1,5 @@
 # Hi, I'm Sagar Parab
-<img src="./public/hB1.svg" alt="Sagar Parab Header Banner"/>
+<img src="./public/hB1.jpg" alt="Sagar Parab Header Banner"/>
 
 Linux Administrator with 2.5 years of hands-on experience in production systems, operations reliability, and troubleshooting. I am now focused on becoming a full-stack engineer who can design, build, and ship web applications that meet industry standards for performance, security, and maintainability.
 
