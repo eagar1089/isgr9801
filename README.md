@@ -1,5 +1,5 @@
 # Hi, I'm Sagar
-<img src="public/headerBanner.svg" alt="Header Banner"/>
+<img src="./public/headerBanner.svg" alt="Header Banner"/>
 
 Linux Administrator with 2.5 years of hands-on experience in production systems, operations reliability, and troubleshooting. I am now focused on becoming a full-stack engineer who can design, build, and ship web applications that meet industry standards for performance, security, and maintainability.
 
