@@ -1,0 +1,31 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Current Focus card">
+  <defs>
+    <linearGradient id="bg" x1="40" y1="40" x2="1160" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#083344"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="120" y1="120" x2="1080" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#818CF8" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="glow" x="0" y="0" width="1200" height="680" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="680" rx="46" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1152" height="632" rx="38" fill="white" fill-opacity="0.08"/>
+  <g filter="url(#glow)">
+    <rect x="24" y="24" width="1152" height="632" rx="38" stroke="url(#stroke)" stroke-width="3" stroke-opacity="0.95"/>
+  </g>
+
+  <text x="88" y="168" fill="#F8FAFC" font-size="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="700">Current Focus</text>
+
+  <text x="92" y="268" fill="#DDE5F2" font-size="44" font-family="Segoe UI, Inter, Arial, sans-serif">• React + TypeScript frontend apps</text>
+  <text x="92" y="340" fill="#DDE5F2" font-size="44" font-family="Segoe UI, Inter, Arial, sans-serif">• Node.js &amp; Python backend APIs</text>
+  <text x="92" y="412" fill="#DDE5F2" font-size="44" font-family="Segoe UI, Inter, Arial, sans-serif">• CI/CD, testing, and monitoring</text>
+</svg>
