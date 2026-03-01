@@ -1,38 +1,32 @@
-<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sagar Parab profile banner">
+<svg width="1600" height="500" viewBox="0 0 1600 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sagar Parab banner">
   <defs>
-    <linearGradient id="bg" x1="40" y1="20" x2="1560" y2="500" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1D1135"/>
-      <stop offset="0.5" stop-color="#0E3557"/>
-      <stop offset="1" stop-color="#2D0A31"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.5" stop-color="#12203B"/>
+      <stop offset="1" stop-color="#20123A"/>
     </linearGradient>
-    <linearGradient id="cardStroke" x1="100" y1="80" x2="1500" y2="440" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#C084FC" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#22D3EE" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#F472B6" stop-opacity="0.85"/>
+    <radialGradient id="glowLeft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 120) rotate(34) scale(380 280)">
+      <stop stop-color="#22D3EE" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowRight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 380) rotate(18) scale(420 260)">
+      <stop stop-color="#C084FC" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="180" y1="130" x2="1180" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <filter id="glow" x="0" y="0" width="1600" height="520" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="14" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
 
-  <rect width="1600" height="520" rx="38" fill="url(#bg)"/>
+  <rect width="1600" height="500" rx="28" fill="url(#bg)"/>
+  <circle cx="360" cy="120" r="340" fill="url(#glowLeft)"/>
+  <circle cx="1220" cy="380" r="360" fill="url(#glowRight)"/>
 
-  <g opacity="0.45">
-    <circle cx="210" cy="100" r="90" fill="#A855F7"/>
-    <circle cx="1450" cy="420" r="130" fill="#06B6D4"/>
-    <circle cx="1320" cy="90" r="80" fill="#F472B6"/>
-  </g>
+  <rect x="120" y="95" width="1120" height="310" rx="28" fill="white" fill-opacity="0.08"/>
+  <rect x="120" y="95" width="1120" height="310" rx="28" stroke="url(#stroke)" stroke-opacity="0.8" stroke-width="2"/>
 
-  <rect x="56" y="56" width="1488" height="408" rx="30" fill="white" fill-opacity="0.08"/>
-  <g filter="url(#glow)">
-    <rect x="56" y="56" width="1488" height="408" rx="30" stroke="url(#cardStroke)" stroke-width="3"/>
-  </g>
-
-  <text x="120" y="238" fill="#F8FAFC" font-size="92" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="800">Sagar Parab</text>
-  <text x="122" y="314" fill="#E2E8F0" font-size="40" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="500">Linux Administrator • Full-Stack Web Explorer</text>
-  <text x="122" y="364" fill="#CBD5E1" font-size="30" font-family="Segoe UI, Inter, Arial, sans-serif">Building reliable systems and modern web products end-to-end</text>
+  <text x="180" y="225" fill="#F8FAFC" font-size="78" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="700">Sagar Parab</text>
+  <text x="180" y="295" fill="#D1E5FF" font-size="38" font-family="Segoe UI, Inter, Arial, sans-serif" font-weight="500">Linux Administrator • Full-Stack Web Explorer</text>
+  <text x="180" y="350" fill="#B7C6DD" font-size="26" font-family="Segoe UI, Inter, Arial, sans-serif">Building reliable systems and crafting modern web experiences</text>
 </svg>
