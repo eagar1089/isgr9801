@@ -66,6 +66,30 @@
 
 ---
 
+## 📅 Isometric Commit Calendar
+
+<p align="center">
+  <img src="https://github.com/isgr9801/isgr9801/blob/testing/metrics.plugin.isocalendar.fullyear.svg" alt="Isocalendar Full Year" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/isgr9801/isgr9801/blob/testing/metrics.plugin.isocalendar.svg" alt="Isocalendar Half Year" />
+</p>
+
+---
+
+## 🏅 Repository Contributors
+
+<p align="center">
+  <img src="https://github.com/isgr9801/isgr9801/blob/testing/metrics.plugin.contributors.categories.svg" alt="Contributors by categories" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/isgr9801/isgr9801/blob/testing/metrics.plugin.contributors.contributions.svg" alt="Contributors by contributions" />
+</p>
+
+---
+
 ## 📬 Connect
 
 <div align="left">
@@ -98,5 +122,5 @@
 
 ### D) Things I learned
 <!--START_SECTION:learned-->
-(Will auto-update from notes.md after the workflow runs.)
+(RSS not configured yet. Add your RSS link to enable.)
 <!--END_SECTION:learned-->
