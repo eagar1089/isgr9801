@@ -1,0 +1,62 @@
+name: GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+
+      # 📅 Isometric commit calendar — Full year
+      - name: Isocalendar (Full Year)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Isometric commit calendar — Half year
+      - name: Isocalendar (Half Year)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+
+      # 🏅 Repository contributors — By contribution types
+      - name: Contributors (Categories)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.contributors.categories.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: isgr9801
+          plugin_contributors: yes
+          plugin_contributors_sections: categories
+          plugin_contributors_categories: |
+            {
+              "📚 Documentation": ["README.md", "docs/**"],
+              "💻 Code": ["source/**", "src/**"],
+              "#️⃣ Others": ["*"]
+            }
+
+      # 🏅 Repository contributors — By number of contributions
+      - name: Contributors (Contributions)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.contributors.contributions.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          template: repository
+          repo: isgr9801
+          plugin_contributors: yes
+          plugin_contributors_contributions: yes
